@@ -23,8 +23,10 @@ jobs:
       - name: Build Application
         run: mvn clean package
         
-      # - name: Configure aws Credentials
-      #   uses: aws-actions/configure-aws-credentials@v5
-      #   with:
-      #     aws-access-key-id:
-        
+      - name: Configure aws Credentials
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          aws-access-key-id: 
+          aws-secret-access-key:
+          aws-region:
+          
