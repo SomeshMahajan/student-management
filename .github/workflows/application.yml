@@ -96,7 +96,7 @@ jobs:
           version: latest
 
       - name: Configure EKS cluster 
-        run: aws eks update-kubeconfig --name my-eks-cluster --region us-west-2
+        run: aws eks update-kubeconfig --name my-eks-cluster --region ap-south-1
           
       - name: Deployment On kubernetes
         run: |
